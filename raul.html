@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIRCOMAD</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f1113;
+  --card:#15181b;
+  --text:#e9ecef;
+  --muted:#a0a6ad;
+  --accent:#ffffff;
+  --border:#262a2f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,#0f1113 0%, #0b0d0f 100%);
+  color:var(--text);
+}
+header{
+  padding:30px 20px 10px;
+  text-align:center;
+}
+.logo{
+  width:140px;
+  filter:grayscale(100%) contrast(120%);
+  margin-bottom:10px;
+}
+h1{
+  margin:5px 0;
+  font-weight:600;
+  letter-spacing:1px;
+}
+p.subtitle{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+nav{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  padding:15px;
+  position:sticky;
+  top:0;
+  background:rgba(15,17,19,0.9);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border);
+}
+nav a{
+  color:var(--muted);
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:20px;
+  transition:0.3s;
+}
+nav a:hover{
+  color:var(--accent);
+  background:var(--border);
+}
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:20px;
+}
+section{
+  background:var(--card);
+  padding:30px;
+  margin:20px 0;
+  border-radius:16px;
+  border:1px solid var(--border);
+  transition:0.3s;
+}
+section:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+h2{
+  margin-top:0;
+  font-weight:600;
+}
+p{
+  color:var(--muted);
+  line-height:1.6;
+}
+.video a{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 18px;
+  border-radius:25px;
+  background:var(--accent);
+  color:#000;
+  text-decoration:none;
+  font-weight:500;
+}
+.video a:hover{
+  opacity:0.8;
+}
+ol li{
+  margin-bottom:8px;
+  color:var(--muted);
+}
+footer{
+  text-align:center;
+  padding:25px;
+  color:var(--muted);
+  border-top:1px solid var(--border);
+}
+</style>
+</head>
+<body>
+
+<header>
+    <!-- IMPORTANTE: guarda tu logo como "logo.png" en la misma carpeta -->
+    <img src="logo.png" alt="Logo CircoMad" class="logo">
+    <h1>CIRCOMAD</h1>
+    <p class="subtitle">Raul Costea · Javier Nieto · Darius Suson</p>
+</header>
+
+<nav>
+    <a href="#intro">Introducción</a>
+    <a href="#idea">Idea</a>
+    <a href="#plano">Plano</a>
+    <a href="#planificacion">Planificación</a>
+    <a href="#fabricacion">Fabricación</a>
+</nav>
+
+<div class="container">
+
+<section id="intro">
+    <h2>Introducción</h2>
+    <p>CircoMad fue creada con la idea de crear objetos simples realizados con madera reciclada, evitando la pérdida de madera en la industria.</p>
+    <p>Somos una empresa pequeña pero decidida a cambiar la forma en la que reutilizamos la madera.</p>
+</section>
+
+<section id="idea">
+    <h2>Idea de negocio</h2>
+    <p>La idea nació de renovar un objeto cotidiano, mejorando su estética y modernizándolo. Se eligió la madera por ser un material fácil de trabajar, accesible y visualmente atractivo.</p>
+    <div class="video">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.leonfelipe.torrejondeardoz/pluginfile.php/108498/assignsubmission_file/submission_files/158029/202510201130%20%281%29%20%281%29.mp4?forcedownload=1" target="_blank">Ver vídeo</a>
+    </div>
+</section>
+
+<section id="plano">
+    <h2>Plano</h2>
+    <p>Cada círculo tiene un diámetro de 1 cm y están separados 2.5 cm entre sí.</p>
+    <p>El taladro debe penetrar 1 cm en la madera.</p>
+</section>
+
+<section id="planificacion">
+    <h2>Planificación</h2>
+    <p><strong>Objetivo:</strong> Organizar recursos, tiempos y tareas para una producción eficiente.</p>
+    <p><strong>Etapas:</strong> Diseño, elección de materiales, producción, control de calidad, envasado y venta.</p>
+    <p><strong>Recursos:</strong> Operarios, maquinaria, madera y barniz.</p>
+    <p><strong>Riesgos:</strong> Defectos en piezas, accidentes y exposición a partículas.</p>
+</section>
+
+<section id="fabricacion">
+    <h2>Proceso de fabricación</h2>
+    <ol>
+        <li>Reunión de materiales necesarios.</li>
+        <li>Mecanizado: cilindros de 10 cm de diámetro y hasta 70 cm de largo, cortados cada 3 cm.</li>
+        <li>Perforación para insertar lapiceros.</li>
+        <li>Acabado con barniz.</li>
+    </ol>
+</section>
+
+</div>
+
+<footer>
+    <p>Proyecto CIRCOMAD · Trabajo IPE</p>
+</footer>
+
+</body>
+</html>
